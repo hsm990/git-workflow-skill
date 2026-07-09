@@ -16,11 +16,57 @@ git-workflow/
 ├── SKILL.md              # the skill itself — workflow rules, commands, recipes
 ├── scripts/
 │   └── new-branch.sh     # helper: safely branch off if currently on main
+├── .claude/INSTALL.md    # agent-executable install steps for Claude Code
+├── .codex/INSTALL.md     # agent-executable install steps for Codex CLI
+├── .opencode/INSTALL.md  # agent-executable install steps for OpenCode
+├── .cursor/INSTALL.md    # agent-executable install steps for Cursor
+├── .gemini/INSTALL.md    # agent-executable install steps for Gemini CLI
+├── .generic/INSTALL.md   # fallback install steps for any other SKILL.md tool
 ├── README.md
 └── LICENSE
 ```
 
-## Install
+## Quick install (one line, in-chat)
+
+Just paste the matching line into your AI coding tool's chat — it will fetch
+the instructions and install itself, no manual copying needed:
+
+**Claude Code**
+```
+Fetch and follow instructions from https://raw.githubusercontent.com/hsm990/git-workflow-skill/main/.claude/INSTALL.md
+```
+
+**Codex CLI**
+```
+Fetch and follow instructions from https://raw.githubusercontent.com/hsm990/git-workflow-skill/main/.codex/INSTALL.md
+```
+
+**OpenCode**
+```
+Fetch and follow instructions from https://raw.githubusercontent.com/hsm990/git-workflow-skill/main/.opencode/INSTALL.md
+```
+
+**Cursor**
+```
+Fetch and follow instructions from https://raw.githubusercontent.com/hsm990/git-workflow-skill/main/.cursor/INSTALL.md
+```
+
+**Gemini CLI**
+```
+Fetch and follow instructions from https://raw.githubusercontent.com/hsm990/git-workflow-skill/main/.gemini/INSTALL.md
+```
+
+**Any other tool that supports SKILL.md** (Windsurf, GitHub Copilot CLI, Antigravity, etc.)
+```
+Fetch and follow instructions from https://raw.githubusercontent.com/hsm990/git-workflow-skill/main/.generic/INSTALL.md
+```
+
+That's it — the agent downloads `SKILL.md` and `scripts/new-branch.sh` into
+the right place for that tool and confirms once it's active.
+
+## Manual install
+
+If you'd rather do it by hand, or your tool doesn't support fetch-and-follow:
 
 Clone the repo first:
 ```bash
